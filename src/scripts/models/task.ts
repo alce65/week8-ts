@@ -1,11 +1,11 @@
-interface iTaskModel {
-    id: number | string;
+export interface iTaskModel {
+    id: number;
     name: string;
     responsible: string;
     isCompleted: boolean;
 }
 
-class TaskModel implements iTaskModel {
+export class TaskModel implements iTaskModel {
     id: number;
     isCompleted: boolean;
     static generateId() {

@@ -9,27 +9,15 @@ import { TodoList } from './components/todo-list.js';
             path[path.length - 1] === '' ||
             path[path.length - 1] === 'index.html'
         ) {
-            index();
+            commonComponents();
         } else if (path[path.length - 1] === 'about.html') {
-            about();
+            commonComponents();
         } else if (path[path.length - 1] === 'tasks.html') {
-            tasks();
+            commonComponents();
+            new TodoList('slot.main');
         }
     });
 })();
-
-function index() {
-    commonComponents();
-}
-
-function about() {
-    commonComponents();
-}
-
-function tasks() {
-    commonComponents();
-    new TodoList('slot.main');
-}
 
 function commonComponents() {
     new Header('slot.header');
