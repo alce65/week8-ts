@@ -1,6 +1,5 @@
 import { iComponent } from '../interfaces/component.js';
 import { iTaskModel } from '../models/task.js';
-import { TASKS } from '../models/tasks.data.js';
 import { TaskStore } from '../services/task-store.js';
 import { Component } from './component.js';
 import { TodoAdd } from './todo-add.js';
